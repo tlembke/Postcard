@@ -94,6 +94,23 @@
                                     <action selector="sendMailButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yrp-ui-pGy"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AlbertEinsteinStamp.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="mnH-XP-D5k">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <animations/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="220" y="154" width="125" height="123"/>
+                                </variation>
+                            </imageView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="htI-g9-atw">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="38" y="161" width="168" height="76"/>
+                                </variation>
+                            </label>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vD9-Kp-kkW">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <animations/>
@@ -104,13 +121,6 @@
                                     <rect key="frame" x="38" y="90" width="300" height="51"/>
                                 </variation>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AlbertEinsteinStamp.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="mnH-XP-D5k">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <animations/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="220" y="154" width="125" height="123"/>
-                                </variation>
-                            </imageView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -119,8 +129,9 @@
                                 <exclude reference="Ibo-1r-GHU"/>
                                 <exclude reference="dD3-x1-6FM"/>
                                 <exclude reference="Sq3-f9-Kdg"/>
-                                <exclude reference="vD9-Kp-kkW"/>
                                 <exclude reference="mnH-XP-D5k"/>
+                                <exclude reference="htI-g9-atw"/>
+                                <exclude reference="vD9-Kp-kkW"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -128,8 +139,9 @@
                                 <include reference="Ibo-1r-GHU"/>
                                 <include reference="dD3-x1-6FM"/>
                                 <include reference="Sq3-f9-Kdg"/>
-                                <include reference="vD9-Kp-kkW"/>
                                 <include reference="mnH-XP-D5k"/>
+                                <include reference="htI-g9-atw"/>
+                                <include reference="vD9-Kp-kkW"/>
                             </mask>
                         </variation>
                     </view>
@@ -138,6 +150,7 @@
                         <outlet property="enterNameTextField" destination="Ibo-1r-GHU" id="J29-Ou-XGu"/>
                         <outlet property="mailButton" destination="Sq3-f9-Kdg" id="Rjn-7B-NzR"/>
                         <outlet property="messageLabel" destination="vD9-Kp-kkW" id="GzT-aD-0J8"/>
+                        <outlet property="nameLabel" destination="htI-g9-atw" id="tVi-Qq-bT7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
